@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./public/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,6 +30,16 @@
       <div id="inner-header">
         <h2 id="brand">Pearson Hardman</h2>
         <nav id="navbar">
+          <a href="#header">Início</a>
+          <a href="#expertise-areas">Serviços</a>
+          <a href="#about">Sobre</a>
+          <a href="#team">Time</a>
+          <a href="#contact">Contato</a>
+        </nav>
+        <!--MEnu Mobile -->
+        <i class="bi bi-list" id="menu"></i>
+        <nav id="mobile-navbar">
+          <i class="bi bi-x-lg" id="close-menu"></i>
           <a href="#header">Início</a>
           <a href="#expertise-areas">Serviços</a>
           <a href="#about">Sobre</a>
@@ -82,7 +92,7 @@
       </div>
       <div id="other-services">
         <div class="service">
-          <img src="/public/assets/bank.jpg" alt="" />
+          <img src="./public/assets/bank.jpg" alt="" />
           <i class="bi bi-bank"></i>
           <div class="service-info">
             <h4>Bancos e Finanças pessoais</h4>
@@ -96,7 +106,7 @@
         </div>
 
         <div class="service">
-          <img src="/public/assets/construction.jpg" alt="Construção" />
+          <img src="./public/assets/construction.jpg" alt="Construção" />
           <i class="bi bi-bricks"></i>
           <div class="service-info">
             <h4>Construção de Imóveis sem escritura</h4>
@@ -109,7 +119,7 @@
           </div>
         </div>
         <div class="service">
-          <img src="/public/assets/company.jpg" alt="Empresa" />
+          <img src="./public/assets/company.jpg" alt="Empresa" />
           <i class="bi bi-building"></i>
           <div class="service-info">
             <h4>Empresas e funcionários</h4>
@@ -141,7 +151,7 @@
             </p>
           </div>
         </div>
-        <div class="about-descrition">
+        <div class="about-description">
           <i class="bi bi-book"></i>
           <div>
             <h4>Domínio das leis</h4>
@@ -175,5 +185,139 @@
         </div>
       </div>
     </section>
+    <!--Depoimentos-->
+    <section id="testimonials" class="text-image-section">
+      <div id="testimonial-information" class="text-container">
+        <p class="section-subtitle">Depoimentos de clientes</p>
+        <h3 class="section-title">
+          A Pearson Hardman resolveu meu caso muito rápido, recomendo a todos.
+        </h3>
+        <div class="author">
+          <div class="author-info">
+            <p class="author-name">Jhon Doe</p>
+            <p class="author-job">CEO da Empresa</p>
+          </div>
+          <img src="./public/assets/author_1.jpg" alt="" />
+        </div>
+        <h3 class="section-title">
+          O melhor escritório que eu já contratei, conseguimos resolver um caso
+          que durava décadas.
+        </h3>
+        <div class="author">
+          <div class="author-info">
+            <p class="author-name">Paul Clinton</p>
+            <p class="author-job">Gerente de Projetos</p>
+          </div>
+          <img src="./public/assets/author_2.jpg" alt="" />
+        </div>
+      </div>
+      <div id="testimonial-image-container" class="image-container">
+        <i class="bi bi-quote"></i>
+        <img src="./public/assets/court.jpg" alt="" />
+      </div>
+    </section>
+
+    <!--Colaboradores-->
+    <section id="team">
+      <span class="square"></span>
+      <h2>
+        A <span>Pearson Hardman</span> tem um time de especialistas a sua
+        disposição
+      </h2>
+      <div class="employees">
+        <div class="employee">
+          <img src="./public/assets/mike.jpg" alt="Mike Ross" />
+          <p class="employee-name">Mike Ross</p>
+          <p class="employee-role">Advogado</p>
+        </div>
+        <div class="employee">
+          <img src="./public/assets/harvey.png" alt="Harvey Specter" />
+          <p class="employee-name">Harvey Specter</p>
+          <p class="employee-role">Advogado Sênior</p>
+        </div>
+        <div class="employee">
+          <img src="./public/assets/louis.jpg" alt="Louis Litt" />
+          <p class="employee-name">Louis Litt</p>
+          <p class="employee-role">Advogado</p>
+        </div>
+        <div class="employee">
+          <img src="./public/assets/jessica.jpg" alt="Jessica Pearson" />
+          <p class="employee-name">Jessica Pearson</p>
+          <p class="employee-role">CEO</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contato -->
+    <section id="contact" class="text-image-section">
+      <div id="contact-image-container" class="image-container">
+        <img src="./public/assets/office.jpg" alt="" />
+      </div>
+      <div id="contact-information" class="text-container">
+        <i class="bi bi-envelope"></i>
+        <p class="section-subtitle">Entre em contato</p>
+        <form>
+          <div class="form-control">
+            <input type="text" name="name" id="name" placeholder="Nome" />
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+          </div>
+          <input type="text" name="phone" id="phone" placeholder="Telefone" />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Sua mensagem..."
+          ></textarea>
+          <input type="submit" value="Enviar" class="btn" />
+        </form>
+      </div>
+    </section>
+    <!-- Rodapé -->
+    <footer id="footer">
+      <div class="contact-info">
+        <div class="footer-brand">
+          <h2>Pearson Hardman</h2>
+          <p>O advogado certo para a sua empresa</p>
+        </div>
+        <p><i class="bi bi-geo-alt"></i> Rua dos Advogados, 1415</p>
+        <p><i class="bi bi-telephone"></i> (99) 9999-9999</p>
+        <p><i class="bi bi-envelope"></i> contato@pearsonhardman.com</p>
+        <div class="social-networks">
+          <p>Siga-nos:</p>
+          <div class="networks">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="links-container">
+        <h4>Outros serviços</h4>
+        <nav>
+          <a href="#">Propriedade intelectual</a>
+          <a href="#">LGPD</a>
+          <a href="#">Direito internacional</a>
+          <a href="#">Processos</a>
+        </nav>
+      </div>
+      <div class="links-container">
+        <h4>Páginas</h4>
+        <nav>
+          <a href="#">Termos e condições</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">Fale com um especialista</a>
+          <a href="#">FAQ</a>
+        </nav>
+      </div>
+      <div class="links-container">
+        <h4>Consulta grátis</h4>
+        <div class="phone-number">
+          <i class="bi bi-telephone"></i>
+          <p>(99) 9999-9999</p>
+        </div>
+        <p class="phone-info">
+          Este telefone é especial para tratar de casos já em andamento
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
